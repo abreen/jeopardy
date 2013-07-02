@@ -1,0 +1,255 @@
+2
+Quiz Questions
+#
+
+Suppose you are testing a program that accepts as input the profit of a small
+company and ouputs a suggested educational donation for that company according
+to the following scheme:
+
+	Negative profit (i.e. a loss): $100 donation
+	Profits less than $100,000:    2% of profits, but not less than $200
+	Profits of $100,000 or more:   $2,000 + 1% of excess over $100,000
+
+Which one of the following is the best set of input data for testing this
+program?
+
+A. All of the following are equally good.
+B. 1, 10, 100, 1000, 10000, 100000, 1000000
+C. -1000, -100, 0, 1000, 100000
+D. -100, 0, 100, 50000, 100000, 200000
+E. -1000, 0, 1000, 2000, 3000, 10000
+
+#
+
+The Java statement:
+
+	for (int i = 1; i <= 6; i++) {
+		if ((i <= 4) && (i > 2))
+			System.out.print("   " + i);
+	}
+
+will produce the output:
+
+A. 1   2   3   4   5   6
+B. 2   3   4
+C. 1   2   3   4   3   4   5   6
+D. 3   4
+E. 3
+
+#
+
+Consider:
+
+	class Prob5 {
+		static void silly() {
+			int temp = x; x *= y; y = temp;
+		}
+
+		public static void main(String[] args) {
+			int x = 3; int y = 4;
+			silly();
+		}
+	}
+
+What will be the output of this program?
+
+A. This code will not even compile!
+B. 4
+C. 3
+D. 12
+E. An error will occur at execution time!
+
+#
+
+The effect of the statements:
+
+	int m = 9;
+	int n = 4;
+	m += n;
+	n = m - n;
+	m = m - n;
+	System.out.print(m + "     " + n);
+
+is to produce the output:
+
+A.  4     9
+B.  5     5
+C. 13     5
+D.  9     4
+E. 13     9
+
+#
+
+When people bet on horse races, the racetrack always reduces its payoffs to
+the largest multiple of 20 cents that does not exceed the exact payoff. This
+means, for example, that if a payoff was 63 cents, the racetrack would only
+pay 60 cents.
+
+Assuming that the variable payoff is an int variable that holds a number of
+cents, this reduction could be achieved by the Java statement:
+
+A. payoff = 20 * payoff % 20;
+B. payoff = 20 * payoff / 20;
+C. payoff = payoff % 20 * 20;
+D. payoff = payoff - (int) payoff / 20;
+E. payoff = (payoff / 20) * 20;
+
+#
+Methods w/Args
+#
+
+What is the output of the code below?:
+
+	public static void main(String[] args) {
+		int x = 2;
+		int y = 5;
+		mystery(x + 2, y);
+	}
+
+	public static void mystery(int y, int x) {
+		System.out.println(x);
+	}
+
+#
+
+Which of the following method calls is legal given the following method:
+
+	public static void myMethod(int a, boolean b, double d) {
+
+	}
+
+A. myMethod(true, 20, 1.0);
+B. myMethod(6, true || false, 3.5);
+C. myMethod(1 + 1, 0.0, 1.0);
+D. myMethod(1.0, false, 1.0);
+E. myMethod(1, true, true);
+
+#
+
+In how many print statements is the variable "x" available for use (in scope?):
+
+	public static void main(String[] args) {
+		int a = 10;
+		System.out.println(_____); 		// 1
+		myMethod(a);
+		System.out.println(_____);		// 2
+	}
+
+	public static void myMethod(int x) {
+		int sum = 0;
+		for (int i = 0; i < 10; i++) {
+			sum += i;
+			System.out.println(_____);	// 3
+		}
+
+		System.out.println(_____);		// 4
+		if (sum > 10) {
+			System.out.println(_____);	// 5
+		}
+	}
+
+#
+
+Which of the following method signatures would be most appropriate for a method
+which prints the name of the user followed by his birthday? For example, the
+method should be given enough information to print "Barack Obama, August 4".
+
+A. printBirthday(name, month, day);
+B. printBirthday(String name, month, int day);
+C. printBirthday();
+D. printBirthday(String name, String month, int day);
+E. printBirthday(int month, int day);
+
+#
+
+What is the output of the code below?:
+
+	public static void main(String[] args) {
+		int four = 4;
+		int twelve = 20;
+		int five = 4;
+
+		four = ++four;
+		twelve += 6;
+		multiply(four, five, twelve);
+	}
+
+	public static void multiply(int apples, int oranges, int bananas) {
+		System.out.println(apples + " * " + oranges + " = " + bananas);
+	}
+
+#
+For Loops
+#
+
+What is the output of the following for loop?:
+
+	for (int i = 10; i <= 21; i += 2) {
+		System.out.print(i + 1);
+	}
+
+#
+
+What is the output of the following for loop?
+
+	for (int i = 10; i >= 0; --i) {
+		System.out.println(i);
+		i--;
+	}
+
+#
+
+Fill in the blank to make the following nested for loops print out this pattern:
+
+****
+***
+**
+*
+
+	for (int i = 1; i <= 4; i++) {
+		for (int j = 0; j < _____; j++) {
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+
+#
+
+How many times will the following loop iterate?
+
+	for (int i = 0; i <= 4; i++) {
+		for (int j = 0; j < i; j++) {
+			System.out.println("Hello, world!");
+		}
+	}
+
+#
+
+How many times will the print statement be executed in the following loop:
+
+	for (int i = 100; i >= 0; i--) {
+		if (i % 10 == 0) {
+			System.out.println("Hello, world!");
+		}
+		i--;
+	}
+
+#
+
+Getting input from the user using a Scanner object.
+
+#
+
+Fill in the blank below (and use the Scanner named input) so that if the user
+enters "Cody 1" the output of the program is:
+
+Cody
+1
+
+	import java.util.*;
+	...
+
+	Scanner input = new Scanner(System.in);
+	System.out.print(_____);	
+
+#

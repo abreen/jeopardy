@@ -1,0 +1,49 @@
+2
+Category 1
+#
+
+The answer is: D. -100, 0, 100, 50000, 100000, 200000
+
+#
+
+The answer is: D. 3   4
+
+#
+
+The answer is: A. This code will not even compile!
+
+#
+
+The answer is: A.  4     9
+
+#
+
+The answer is: E. payoff = (payoff / 20) * 20;
+
+#
+Category 2
+#
+
+The answer is: 5
+
+#
+
+The answer is: E. payoff = (payoff / 20) * 20;
+
+#
+
+The answer is: 3
+
+#
+
+The answer is: D. printBirthday(String name, String month, int day);
+
+#
+
+The answer is: 5 * 4 = 26
+
+#
+
+The answer to Final Jeopardy is: input.next() + "\n" + input.nextInt()
+
+#
