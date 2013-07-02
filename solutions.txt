@@ -1,4 +1,4 @@
-2
+4
 Category 1
 #
 
@@ -41,6 +41,49 @@ The answer is: D. printBirthday(String name, String month, int day);
 #
 
 The answer is: 5 * 4 = 26
+
+#
+Category 3
+#
+
+The answer is: 11 13 15
+
+#
+
+The answer is: 10 8 6 4 2 0
+
+#
+
+The answer is: 5 - i
+
+#
+
+The answer is: 10
+
+#
+
+The answer is: 11
+
+#
+Category 4
+#
+
+The answer is: true
+
+#
+
+The answer is: false
+
+#
+
+The answer is: Statement 2
+
+#
+
+The answer is: You entered a zero.
+
+#
+The answer is: j <= i * i
 
 #
 
