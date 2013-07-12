@@ -6,6 +6,11 @@
 public interface JeopardyInterface {
   
   public static final int BOARD_WIDTH = 4;
+  
+  /**
+   * Height of the board, not counting the extra row containing the
+   * category titles.
+   */
   public static final int BOARD_HEIGHT = 5;
   
   public static final int NUMBER_OF_TEAMS = 4;
@@ -57,6 +62,13 @@ public interface JeopardyInterface {
    * @param amount The dollar amount to take
    */
   public void incorrect(int team, int amount);
+  
+  /**
+   * Given an x-coordinate on the board, return the name of the category.
+   * @param x The x-coordinate on the board
+   * @return The string name of the category
+   */
+  public String getCategoryName(int x);
   
   
 }
